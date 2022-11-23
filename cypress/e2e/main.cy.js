@@ -11,9 +11,9 @@ context('Tests on main page', () => {
   })
 
   it('Check titles on main page', function(){
-    MainPage.closeModal()
-    MainPage.firstTitle.should('contain.text',this.data.MainPage.firstTitle)
-    MainPage.secondTitle.should('contain.text',this.data.MainPage.secondTitle)
+    //MainPage.closeModal()
+    MainPage.firstTitle.should('contain.text',this.data.main.firstTitle)
+    MainPage.secondTitle.should('contain.text',this.data.main.secondTitle)
   })
 
 })
