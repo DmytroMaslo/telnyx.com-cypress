@@ -6,6 +6,7 @@
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
   },
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^11.1.0"
   }
