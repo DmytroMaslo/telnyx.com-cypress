@@ -31,6 +31,5 @@ class MainPage extends Page{
            })
          .trigger('mouseup', { force: true });
     }
-
 }
 export default new MainPage()
