@@ -1,1 +1,1 @@
-[{"uid":"36fa162bf6f09cb","name":"Check titles on main page","time":{"start":1669360285046,"stop":1669360290816,"duration":5770},"status":"passed","severity":"normal"}]
+[{"uid":"f6c69febbb2f5af2","name":"Check titles on main page","time":{"start":1669639252936,"stop":1669639258554,"duration":5618},"status":"passed","severity":"normal"},{"uid":"6f1669bc0c748298","name":"Check Switch + Save with Telnyx, Make outbound calls","time":{"start":1669639258581,"stop":1669639265619,"duration":7038},"status":"failed","severity":"normal"}]
