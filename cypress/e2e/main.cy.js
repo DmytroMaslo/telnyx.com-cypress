@@ -16,8 +16,13 @@ context('Tests on main page', () => {
     MainPage.secondTitle.should('contain.text',this.data.main.secondTitle)
   })
   it('Check Switch + Save with Telnyx, Make outbound calls', function(){
-    MainPage.moveSlider()
+    MainPage.moveSlider(0)
     MainPage.saveUp.should('contain.text','4353')
+  })
+
+  it('Check Switch + Save with Telnyx, Receive inbound calls', function(){
+    MainPage.moveSlider(1)
+    MainPage.textValueTwilio.should('contain.text','9,002')
   })
 
 

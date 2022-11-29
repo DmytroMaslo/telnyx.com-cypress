@@ -3,8 +3,9 @@ const buttonCart = 'svg[data-icon="shopping-cart"]'
 const addSIM = 'Add SIM to Cart'
 const titles = "header h2"
 const sliders = "[role='slider']"
-const howMuch= "//*[contains(text(),'How much will you')]"
-const textSaveUp= "//*[contains(text(),'Save up to')]"
+const howMuch = "//*[contains(text(),'How much will you')]"
+const textSaveUp = "//*[contains(text(),'Save up to')]"
+const valueTwilio = "//*[contains(text(),'$')]"
 
 class MainPage extends Page{
     clickButtonCart(){
@@ -19,10 +20,13 @@ class MainPage extends Page{
     get saveUp(){
         return cy.xpath(textSaveUp)
     }
-    moveSlider(){
-        cy.scrollTo(0, 4400)
+    get textValueTwilio(){
+        return cy.xpath(valueTwilio).eq(3)
+    }
+    moveSlider(slider){
+        cy.scrollTo(0, 4200)
         cy.xpath(howMuch).click();
-        cy.get(sliders).eq(0)
+        cy.get(sliders).eq(slider)
         .trigger('mousedown', { button: 0 })
         .wait(500)
         .trigger('mousemove', {
