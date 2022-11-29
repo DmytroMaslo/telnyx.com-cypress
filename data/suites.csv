@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Tue Nov 29 14:14:06 UTC 2022","Tue Nov 29 14:21:29 UTC 2022","443605","","Tests on main page","","","","Check Switch + Save with Telnyx, Receive inbound calls",""
-"passed","Tue Nov 29 14:13:42 UTC 2022","Tue Nov 29 14:13:51 UTC 2022","8898","","Tests on main page","","","","Check titles on main page",""
-"passed","Tue Nov 29 14:13:51 UTC 2022","Tue Nov 29 14:14:06 UTC 2022","14109","","Tests on main page","","","","Check Switch + Save with Telnyx, Make outbound calls",""
+"skipped","Tue Nov 29 14:36:08 UTC 2022","Tue Nov 29 14:36:08 UTC 2022","7","","Tests on main page","","","","Check titles on main page",""
+"skipped","Tue Nov 29 14:36:08 UTC 2022","Tue Nov 29 14:36:08 UTC 2022","3","","Tests on main page","","","","Check Switch + Save with Telnyx, Make outbound calls",""
+"failed","Tue Nov 29 14:36:08 UTC 2022","Tue Nov 29 14:36:18 UTC 2022","10212","","Tests on main page","","","","Check Switch + Save with Telnyx, Receive inbound calls",""
