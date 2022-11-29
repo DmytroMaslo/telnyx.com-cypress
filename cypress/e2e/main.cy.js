@@ -10,12 +10,12 @@ context('Tests on main page', () => {
     
   })
 
-  it('Check titles on main page', function(){
+  it.skip('Check titles on main page', function(){
     MainPage.closeModal()
     MainPage.firstTitle.should('contain.text',this.data.main.firstTitle)
     MainPage.secondTitle.should('contain.text',this.data.main.secondTitle)
   })
-  it('Check Switch + Save with Telnyx, Make outbound calls', function(){
+  it.skip('Check Switch + Save with Telnyx, Make outbound calls', function(){
     MainPage.moveSlider(0)
     MainPage.saveUp.should('contain.text','4353')
   })

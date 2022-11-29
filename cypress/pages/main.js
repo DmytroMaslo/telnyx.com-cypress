@@ -21,7 +21,7 @@ class MainPage extends Page{
         return cy.xpath(textSaveUp)
     }
     get textValueTwilio(){
-        return cy.xpath(valueTwilio).eq(3)
+        return cy.xpath(valueTwilio).eq(2)
     }
     moveSlider(slider){
         cy.scrollTo(0, 4200)
