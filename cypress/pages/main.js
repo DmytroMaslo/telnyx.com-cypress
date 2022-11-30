@@ -30,6 +30,9 @@ class MainPage extends Page{
     scrollToSwithch(value){
         cy.scrollTo(0,value)
     }
+    /**
+     * @param slider number 
+     */
     moveSlider(slider){
         cy.scrollTo(0, 4200)
         cy.xpath(howMuch).click();
