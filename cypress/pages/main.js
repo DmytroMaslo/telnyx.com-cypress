@@ -3,9 +3,10 @@ const buttonCart = 'svg[data-icon="shopping-cart"]'
 const addSIM = 'Add SIM to Cart'
 const titles = "header h2"
 const sliders = "[role='slider']"
+const titleSwitch = 'h2 a span';
 const howMuch = "//*[contains(text(),'How much will you')]"
 const textSaveUp = "//*[contains(text(),'Save up to')]"
-const valueTwilio = "//*[contains(text(),'$')]"
+const valueTwilio = "//*[contains(text(),'/mo')]/span"
 const checkBoxTollFreeNumbers = '#toll-free-numbers'
 
 class MainPage extends Page{
@@ -13,6 +14,7 @@ class MainPage extends Page{
         cy.get(buttonCart).click()
     }
     clickCheckBoxTollFreeNumbers(){
+        cy.get(titleSwitch).scrollIntoView()
         cy.get(checkBoxTollFreeNumbers).click()
     }
     get firstTitle(){
@@ -25,7 +27,7 @@ class MainPage extends Page{
         return cy.xpath(textSaveUp)
     }
     get textValueTwilio(){
-        return cy.xpath(valueTwilio).eq(2)
+        return cy.xpath(valueTwilio).eq(0)
     }
     scrollToSwitch(value){
         cy.scrollTo(0,value)
@@ -35,6 +37,7 @@ class MainPage extends Page{
      */
     moveSlider(slider){
         cy.scrollTo(0, 4150)
+        cy.get(titleSwitch).scrollIntoView()
         cy.get(sliders).eq(slider)
         .trigger('mousedown', { button: 0 })
         .wait(500)
