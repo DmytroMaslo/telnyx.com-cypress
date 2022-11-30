@@ -6,10 +6,14 @@ const sliders = "[role='slider']"
 const howMuch = "//*[contains(text(),'How much will you')]"
 const textSaveUp = "//*[contains(text(),'Save up to')]"
 const valueTwilio = "//*[contains(text(),'$')]"
+const checkBoxTollFreeNumbers = '#toll-free-numbers'
 
 class MainPage extends Page{
     clickButtonCart(){
         cy.get(buttonCart).click()
+    }
+    clickCheckBoxTollFreeNumbers(){
+        cy.get(checkBoxTollFreeNumbers).click()
     }
     get firstTitle(){
         return cy.get(titles).eq(0)
@@ -22,6 +26,9 @@ class MainPage extends Page{
     }
     get textValueTwilio(){
         return cy.xpath(valueTwilio).eq(2)
+    }
+    scrollToSwithch(value){
+        cy.scrollTo(0,value)
     }
     moveSlider(slider){
         cy.scrollTo(0, 4200)

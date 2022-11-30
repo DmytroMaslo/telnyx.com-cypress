@@ -24,6 +24,11 @@ context('Tests on main page', () => {
     MainPage.moveSlider(1)
     MainPage.textValueTwilio.should('contain.text','9,002')
   })
-
+  it('Check Switch + Save with Telnyx, Toll-free numbers', function(){
+    MainPage.scrollToSwithch(4200)
+    MainPage.clickCheckBoxTollFreeNumbers()
+    MainPage.saveUp.should('contain.text','3257')
+    MainPage.textValueTwilio.should('contain.text','5,747')
+  })
 
 })
