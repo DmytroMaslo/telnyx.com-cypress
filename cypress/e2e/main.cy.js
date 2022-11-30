@@ -15,7 +15,7 @@ context('Tests on main page', () => {
     MainPage.firstTitle.should('contain.text',this.data.main.firstTitle)
     MainPage.secondTitle.should('contain.text',this.data.main.secondTitle)
   })
-  
+
   it('Check Switch + Save with Telnyx, Make outbound calls', function(){
     MainPage.moveSlider(0)
     MainPage.saveUp.should('contain.text','4353')
@@ -27,7 +27,7 @@ context('Tests on main page', () => {
   })
 
   it('Check Switch + Save with Telnyx, Toll-free numbers', function(){
-    MainPage.scrollToSwithch(4200)
+    MainPage.scrollToSwitch(4300)
     MainPage.clickCheckBoxTollFreeNumbers()
     MainPage.saveUp.should('contain.text','3257')
     MainPage.textValueTwilio.should('contain.text','5,747')

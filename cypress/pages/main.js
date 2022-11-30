@@ -27,7 +27,7 @@ class MainPage extends Page{
     get textValueTwilio(){
         return cy.xpath(valueTwilio).eq(2)
     }
-    scrollToSwithch(value){
+    scrollToSwitch(value){
         cy.scrollTo(0,value)
     }
     /**
