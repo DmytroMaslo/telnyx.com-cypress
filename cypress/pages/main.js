@@ -36,7 +36,6 @@ class MainPage extends Page{
      * @param slider number 
      */
     moveSlider(slider){
-        cy.scrollTo(0, 4150)
         cy.get(titleSwitch).scrollIntoView()
         cy.get(sliders).eq(slider)
         .trigger('mousedown', { button: 0 })

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import MainPage from '../pages/main'
 
-context('Tests on main page', () => {
+context('Main page tests', () => {
   beforeEach(() => {
     cy.fixture('texts').then(function (fdata) {
       this.data = fdata;
@@ -16,14 +16,12 @@ context('Tests on main page', () => {
     MainPage.secondTitle.should('contain.text',this.data.main.secondTitle)
   })
 
-  it('Check Switch + Save with Telnyx, Make outbound calls', function(){
+  it('Check Switch + Save with Telnyx form', function(){
+    MainPage.scrollToSwitch(4300)
     MainPage.moveSlider(0)
     MainPage.saveUp.should('contain.text','4353')
-  })
-
-  it('Check Switch + Save with Telnyx, Receive inbound calls', function(){
     MainPage.moveSlider(1)
-    MainPage.textValueTwilio.should('contain.text','9,002')
+    MainPage.textValueTwilio.should('contain.text','13,586')
   })
 
   it('Check Switch + Save with Telnyx, Toll-free numbers', function(){
