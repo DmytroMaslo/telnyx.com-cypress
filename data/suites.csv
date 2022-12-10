@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Dec 07 08:41:30 UTC 2022","Wed Dec 07 08:41:38 UTC 2022","7331","","Main page tests","","","","Check titles on main page",""
-"passed","Wed Dec 07 08:41:51 UTC 2022","Wed Dec 07 08:41:58 UTC 2022","7127","","Main page tests","","","","Check Switch + Save with Telnyx, Toll-free numbers",""
-"failed","Wed Dec 07 08:41:38 UTC 2022","Wed Dec 07 08:41:50 UTC 2022","12719","","Main page tests","","","","Check Switch + Save with Telnyx form",""
+"passed","Sat Dec 10 00:22:55 UTC 2022","Sat Dec 10 00:23:03 UTC 2022","7991","","Main page tests","","","","Check titles on main page",""
+"passed","Sat Dec 10 00:23:03 UTC 2022","Sat Dec 10 00:23:21 UTC 2022","17807","","Main page tests","","","","Check Switch + Save with Telnyx form",""
+"passed","Sat Dec 10 00:23:21 UTC 2022","Sat Dec 10 00:23:29 UTC 2022","8027","","Main page tests","","","","Check Switch + Save with Telnyx, Toll-free numbers",""
