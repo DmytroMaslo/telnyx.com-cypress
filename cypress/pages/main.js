@@ -4,7 +4,7 @@ const addSIM = 'Add SIM to Cart'
 const titles = "header h2"
 const sliders = "[role='slider']"
 const titleSwitch = 'h2 a span';
-const howMuch = "//*[contains(text(),'How much will you')]"
+const header = "//h2[contains(text(),'Build the next')]"
 const textSaveUp = "//*[contains(text(),'Save up to')]"
 const valueTwilio = "//*[contains(text(),'/mo')]/span"
 const checkBoxTollFreeNumbers = '#toll-free-numbers'

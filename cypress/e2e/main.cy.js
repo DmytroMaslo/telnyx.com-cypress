@@ -17,6 +17,7 @@ context('Main page tests', () => {
   })
 
   it('Check Switch + Save with Telnyx form', function(){
+    MainPage.firstTitle.should('be.visible')
     MainPage.scrollToSwitch(4300)
     MainPage.moveSlider(0)
     MainPage.saveUp.should('contain.text','4353')
@@ -25,6 +26,7 @@ context('Main page tests', () => {
   })
 
   it('Check Switch + Save with Telnyx, Toll-free numbers', function(){
+    MainPage.firstTitle.should('be.visible')
     MainPage.scrollToSwitch(4300)
     MainPage.clickCheckBoxTollFreeNumbers()
     MainPage.saveUp.should('contain.text','3257')
